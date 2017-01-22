@@ -17,6 +17,7 @@
 		7D4FD85B1E34494600CF995E /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4FD85A1E34494600CF995E /* Country.swift */; };
 		7D4FD85D1E34744A00CF995E /* CountryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4FD85C1E34744A00CF995E /* CountryDetailView.swift */; };
 		7D4FD8601E347AC400CF995E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D4FD85F1E347AC400CF995E /* MapKit.framework */; };
+		7D4FD8631E352EA600CF995E /* CountryAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4FD8621E352EA600CF995E /* CountryAnnotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,9 +51,10 @@
 		7D4FD8481E33D2C500CF995E /* ebayProgrammingExerciseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ebayProgrammingExerciseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D4FD84C1E33D2C500CF995E /* ebayProgrammingExerciseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ebayProgrammingExerciseUITests.swift; sourceTree = "<group>"; };
 		7D4FD84E1E33D2C500CF995E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7D4FD85A1E34494600CF995E /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		7D4FD85A1E34494600CF995E /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Country.swift; path = CustomClasses/Country.swift; sourceTree = "<group>"; };
 		7D4FD85C1E34744A00CF995E /* CountryDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryDetailView.swift; sourceTree = "<group>"; };
 		7D4FD85F1E347AC400CF995E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		7D4FD8621E352EA600CF995E /* CountryAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryAnnotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,13 +107,13 @@
 		7D4FD82B1E33D2C500CF995E /* ebayProgrammingExercise */ = {
 			isa = PBXGroup;
 			children = (
+				7D4FD8611E352C6800CF995E /* CustomClasses */,
 				7D4FD82C1E33D2C500CF995E /* AppDelegate.swift */,
 				7D4FD82E1E33D2C500CF995E /* ViewController.swift */,
 				7D4FD8301E33D2C500CF995E /* Main.storyboard */,
 				7D4FD8331E33D2C500CF995E /* Assets.xcassets */,
 				7D4FD8351E33D2C500CF995E /* LaunchScreen.storyboard */,
 				7D4FD8381E33D2C500CF995E /* Info.plist */,
-				7D4FD85A1E34494600CF995E /* Country.swift */,
 				7D4FD85C1E34744A00CF995E /* CountryDetailView.swift */,
 			);
 			path = ebayProgrammingExercise;
@@ -141,6 +143,15 @@
 				7D4FD85F1E347AC400CF995E /* MapKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7D4FD8611E352C6800CF995E /* CustomClasses */ = {
+			isa = PBXGroup;
+			children = (
+				7D4FD85A1E34494600CF995E /* Country.swift */,
+				7D4FD8621E352EA600CF995E /* CountryAnnotation.swift */,
+			);
+			name = CustomClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D4FD85D1E34744A00CF995E /* CountryDetailView.swift in Sources */,
+				7D4FD8631E352EA600CF995E /* CountryAnnotation.swift in Sources */,
 				7D4FD82F1E33D2C500CF995E /* ViewController.swift in Sources */,
 				7D4FD85B1E34494600CF995E /* Country.swift in Sources */,
 				7D4FD82D1E33D2C500CF995E /* AppDelegate.swift in Sources */,
