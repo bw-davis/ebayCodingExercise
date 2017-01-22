@@ -1,0 +1,553 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7D4FD82D1E33D2C500CF995E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4FD82C1E33D2C500CF995E /* AppDelegate.swift */; };
+		7D4FD82F1E33D2C500CF995E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4FD82E1E33D2C500CF995E /* ViewController.swift */; };
+		7D4FD8321E33D2C500CF995E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D4FD8301E33D2C500CF995E /* Main.storyboard */; };
+		7D4FD8341E33D2C500CF995E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D4FD8331E33D2C500CF995E /* Assets.xcassets */; };
+		7D4FD8371E33D2C500CF995E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D4FD8351E33D2C500CF995E /* LaunchScreen.storyboard */; };
+		7D4FD8421E33D2C500CF995E /* ebayProgrammingExerciseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4FD8411E33D2C500CF995E /* ebayProgrammingExerciseTests.swift */; };
+		7D4FD84D1E33D2C500CF995E /* ebayProgrammingExerciseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4FD84C1E33D2C500CF995E /* ebayProgrammingExerciseUITests.swift */; };
+		7D4FD85B1E34494600CF995E /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4FD85A1E34494600CF995E /* Country.swift */; };
+		7D4FD85D1E34744A00CF995E /* CountryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4FD85C1E34744A00CF995E /* CountryDetailView.swift */; };
+		7D4FD8601E347AC400CF995E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D4FD85F1E347AC400CF995E /* MapKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7D4FD83E1E33D2C500CF995E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7D4FD8211E33D2C500CF995E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D4FD8281E33D2C500CF995E;
+			remoteInfo = ebayProgrammingExercise;
+		};
+		7D4FD8491E33D2C500CF995E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7D4FD8211E33D2C500CF995E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D4FD8281E33D2C500CF995E;
+			remoteInfo = ebayProgrammingExercise;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7D4FD8291E33D2C500CF995E /* ebayProgrammingExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ebayProgrammingExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D4FD82C1E33D2C500CF995E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7D4FD82E1E33D2C500CF995E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7D4FD8311E33D2C500CF995E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7D4FD8331E33D2C500CF995E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7D4FD8361E33D2C500CF995E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7D4FD8381E33D2C500CF995E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D4FD83D1E33D2C500CF995E /* ebayProgrammingExerciseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ebayProgrammingExerciseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D4FD8411E33D2C500CF995E /* ebayProgrammingExerciseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ebayProgrammingExerciseTests.swift; sourceTree = "<group>"; };
+		7D4FD8431E33D2C500CF995E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D4FD8481E33D2C500CF995E /* ebayProgrammingExerciseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ebayProgrammingExerciseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D4FD84C1E33D2C500CF995E /* ebayProgrammingExerciseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ebayProgrammingExerciseUITests.swift; sourceTree = "<group>"; };
+		7D4FD84E1E33D2C500CF995E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D4FD85A1E34494600CF995E /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		7D4FD85C1E34744A00CF995E /* CountryDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryDetailView.swift; sourceTree = "<group>"; };
+		7D4FD85F1E347AC400CF995E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7D4FD8261E33D2C500CF995E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D4FD8601E347AC400CF995E /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D4FD83A1E33D2C500CF995E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D4FD8451E33D2C500CF995E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7D4FD8201E33D2C500CF995E = {
+			isa = PBXGroup;
+			children = (
+				7D4FD82B1E33D2C500CF995E /* ebayProgrammingExercise */,
+				7D4FD8401E33D2C500CF995E /* ebayProgrammingExerciseTests */,
+				7D4FD84B1E33D2C500CF995E /* ebayProgrammingExerciseUITests */,
+				7D4FD82A1E33D2C500CF995E /* Products */,
+				7D4FD85E1E347AC400CF995E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7D4FD82A1E33D2C500CF995E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7D4FD8291E33D2C500CF995E /* ebayProgrammingExercise.app */,
+				7D4FD83D1E33D2C500CF995E /* ebayProgrammingExerciseTests.xctest */,
+				7D4FD8481E33D2C500CF995E /* ebayProgrammingExerciseUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7D4FD82B1E33D2C500CF995E /* ebayProgrammingExercise */ = {
+			isa = PBXGroup;
+			children = (
+				7D4FD82C1E33D2C500CF995E /* AppDelegate.swift */,
+				7D4FD82E1E33D2C500CF995E /* ViewController.swift */,
+				7D4FD8301E33D2C500CF995E /* Main.storyboard */,
+				7D4FD8331E33D2C500CF995E /* Assets.xcassets */,
+				7D4FD8351E33D2C500CF995E /* LaunchScreen.storyboard */,
+				7D4FD8381E33D2C500CF995E /* Info.plist */,
+				7D4FD85A1E34494600CF995E /* Country.swift */,
+				7D4FD85C1E34744A00CF995E /* CountryDetailView.swift */,
+			);
+			path = ebayProgrammingExercise;
+			sourceTree = "<group>";
+		};
+		7D4FD8401E33D2C500CF995E /* ebayProgrammingExerciseTests */ = {
+			isa = PBXGroup;
+			children = (
+				7D4FD8411E33D2C500CF995E /* ebayProgrammingExerciseTests.swift */,
+				7D4FD8431E33D2C500CF995E /* Info.plist */,
+			);
+			path = ebayProgrammingExerciseTests;
+			sourceTree = "<group>";
+		};
+		7D4FD84B1E33D2C500CF995E /* ebayProgrammingExerciseUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7D4FD84C1E33D2C500CF995E /* ebayProgrammingExerciseUITests.swift */,
+				7D4FD84E1E33D2C500CF995E /* Info.plist */,
+			);
+			path = ebayProgrammingExerciseUITests;
+			sourceTree = "<group>";
+		};
+		7D4FD85E1E347AC400CF995E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D4FD85F1E347AC400CF995E /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7D4FD8281E33D2C500CF995E /* ebayProgrammingExercise */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D4FD8511E33D2C500CF995E /* Build configuration list for PBXNativeTarget "ebayProgrammingExercise" */;
+			buildPhases = (
+				7D4FD8251E33D2C500CF995E /* Sources */,
+				7D4FD8261E33D2C500CF995E /* Frameworks */,
+				7D4FD8271E33D2C500CF995E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ebayProgrammingExercise;
+			productName = ebayProgrammingExercise;
+			productReference = 7D4FD8291E33D2C500CF995E /* ebayProgrammingExercise.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7D4FD83C1E33D2C500CF995E /* ebayProgrammingExerciseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D4FD8541E33D2C500CF995E /* Build configuration list for PBXNativeTarget "ebayProgrammingExerciseTests" */;
+			buildPhases = (
+				7D4FD8391E33D2C500CF995E /* Sources */,
+				7D4FD83A1E33D2C500CF995E /* Frameworks */,
+				7D4FD83B1E33D2C500CF995E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7D4FD83F1E33D2C500CF995E /* PBXTargetDependency */,
+			);
+			name = ebayProgrammingExerciseTests;
+			productName = ebayProgrammingExerciseTests;
+			productReference = 7D4FD83D1E33D2C500CF995E /* ebayProgrammingExerciseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7D4FD8471E33D2C500CF995E /* ebayProgrammingExerciseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D4FD8571E33D2C500CF995E /* Build configuration list for PBXNativeTarget "ebayProgrammingExerciseUITests" */;
+			buildPhases = (
+				7D4FD8441E33D2C500CF995E /* Sources */,
+				7D4FD8451E33D2C500CF995E /* Frameworks */,
+				7D4FD8461E33D2C500CF995E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7D4FD84A1E33D2C500CF995E /* PBXTargetDependency */,
+			);
+			name = ebayProgrammingExerciseUITests;
+			productName = ebayProgrammingExerciseUITests;
+			productReference = 7D4FD8481E33D2C500CF995E /* ebayProgrammingExerciseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7D4FD8211E33D2C500CF995E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Brian Davis";
+				TargetAttributes = {
+					7D4FD8281E33D2C500CF995E = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					7D4FD83C1E33D2C500CF995E = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7D4FD8281E33D2C500CF995E;
+					};
+					7D4FD8471E33D2C500CF995E = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7D4FD8281E33D2C500CF995E;
+					};
+				};
+			};
+			buildConfigurationList = 7D4FD8241E33D2C500CF995E /* Build configuration list for PBXProject "ebayProgrammingExercise" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7D4FD8201E33D2C500CF995E;
+			productRefGroup = 7D4FD82A1E33D2C500CF995E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7D4FD8281E33D2C500CF995E /* ebayProgrammingExercise */,
+				7D4FD83C1E33D2C500CF995E /* ebayProgrammingExerciseTests */,
+				7D4FD8471E33D2C500CF995E /* ebayProgrammingExerciseUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7D4FD8271E33D2C500CF995E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D4FD8371E33D2C500CF995E /* LaunchScreen.storyboard in Resources */,
+				7D4FD8341E33D2C500CF995E /* Assets.xcassets in Resources */,
+				7D4FD8321E33D2C500CF995E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D4FD83B1E33D2C500CF995E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D4FD8461E33D2C500CF995E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7D4FD8251E33D2C500CF995E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D4FD85D1E34744A00CF995E /* CountryDetailView.swift in Sources */,
+				7D4FD82F1E33D2C500CF995E /* ViewController.swift in Sources */,
+				7D4FD85B1E34494600CF995E /* Country.swift in Sources */,
+				7D4FD82D1E33D2C500CF995E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D4FD8391E33D2C500CF995E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D4FD8421E33D2C500CF995E /* ebayProgrammingExerciseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D4FD8441E33D2C500CF995E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D4FD84D1E33D2C500CF995E /* ebayProgrammingExerciseUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7D4FD83F1E33D2C500CF995E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7D4FD8281E33D2C500CF995E /* ebayProgrammingExercise */;
+			targetProxy = 7D4FD83E1E33D2C500CF995E /* PBXContainerItemProxy */;
+		};
+		7D4FD84A1E33D2C500CF995E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7D4FD8281E33D2C500CF995E /* ebayProgrammingExercise */;
+			targetProxy = 7D4FD8491E33D2C500CF995E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7D4FD8301E33D2C500CF995E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D4FD8311E33D2C500CF995E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7D4FD8351E33D2C500CF995E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D4FD8361E33D2C500CF995E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7D4FD84F1E33D2C500CF995E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7D4FD8501E33D2C500CF995E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7D4FD8521E33D2C500CF995E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ebayProgrammingExercise/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ebay.ebayProgrammingExercise;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		7D4FD8531E33D2C500CF995E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ebayProgrammingExercise/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ebay.ebayProgrammingExercise;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		7D4FD8551E33D2C500CF995E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ebayProgrammingExerciseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ebay.ebayProgrammingExerciseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ebayProgrammingExercise.app/ebayProgrammingExercise";
+			};
+			name = Debug;
+		};
+		7D4FD8561E33D2C500CF995E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ebayProgrammingExerciseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ebay.ebayProgrammingExerciseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ebayProgrammingExercise.app/ebayProgrammingExercise";
+			};
+			name = Release;
+		};
+		7D4FD8581E33D2C500CF995E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = ebayProgrammingExerciseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ebay.ebayProgrammingExerciseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = ebayProgrammingExercise;
+			};
+			name = Debug;
+		};
+		7D4FD8591E33D2C500CF995E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = ebayProgrammingExerciseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ebay.ebayProgrammingExerciseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = ebayProgrammingExercise;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7D4FD8241E33D2C500CF995E /* Build configuration list for PBXProject "ebayProgrammingExercise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D4FD84F1E33D2C500CF995E /* Debug */,
+				7D4FD8501E33D2C500CF995E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D4FD8511E33D2C500CF995E /* Build configuration list for PBXNativeTarget "ebayProgrammingExercise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D4FD8521E33D2C500CF995E /* Debug */,
+				7D4FD8531E33D2C500CF995E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7D4FD8541E33D2C500CF995E /* Build configuration list for PBXNativeTarget "ebayProgrammingExerciseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D4FD8551E33D2C500CF995E /* Debug */,
+				7D4FD8561E33D2C500CF995E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7D4FD8571E33D2C500CF995E /* Build configuration list for PBXNativeTarget "ebayProgrammingExerciseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D4FD8581E33D2C500CF995E /* Debug */,
+				7D4FD8591E33D2C500CF995E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7D4FD8211E33D2C500CF995E /* Project object */;
+}

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Bqg-Mq-IC8">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="bAn-zK-zXj">
+            <objects>
+                <navigationController id="Bqg-Mq-IC8" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OpN-9s-mDO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Dw0-MM-WIX" kind="relationship" relationship="rootViewController" id="Ttx-Me-NWf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xP1-8v-n0y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1445" y="37"/>
+        </scene>
+        <!--Country List-->
+        <scene sceneID="AnJ-d1-stJ">
+            <objects>
+                <viewController id="Dw0-MM-WIX" customClass="CountriesTableViewController" customModule="ebayProgrammingExercise" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="ECD-Iq-2Tl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="countrycell" id="9qM-pe-mv3">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9qM-pe-mv3" id="X12-yZ-1zT">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="bN8-P8-l6q" kind="showDetail" id="V1e-uN-Okf"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="Dw0-MM-WIX" id="TJM-Wa-ERC"/>
+                            <outlet property="delegate" destination="Dw0-MM-WIX" id="YoR-Tr-Pcf"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Country List" id="uMM-yz-pim"/>
+                    <connections>
+                        <outlet property="theTableView" destination="ECD-Iq-2Tl" id="D1b-xa-5cI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NEe-Cu-TXo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="f3O-7a-18S" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-599" y="36"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="c5Q-IJ-oOd">
+            <objects>
+                <viewController id="bN8-P8-l6q" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7zS-pT-Ygs"/>
+                        <viewControllerLayoutGuide type="bottom" id="mqF-e9-QZh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="u3u-W5-NhJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CNB-QK-LmF">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Country Detail" id="9YP-Tt-ta5">
+                                        <barButtonItem key="leftBarButtonItem" title="Done" id="Hxr-Uq-aVR">
+                                            <connections>
+                                                <segue destination="f3O-7a-18S" kind="unwind" unwindAction="countryDetailDoneWithSender:" id="NhI-3S-xQp"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="nLV-Pg-upJ">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CNB-QK-LmF" firstAttribute="leading" secondItem="u3u-W5-NhJ" secondAttribute="leading" id="84K-tO-7iX"/>
+                            <constraint firstItem="nLV-Pg-upJ" firstAttribute="leading" secondItem="u3u-W5-NhJ" secondAttribute="leading" id="EvM-ON-Ezw"/>
+                            <constraint firstAttribute="trailing" secondItem="nLV-Pg-upJ" secondAttribute="trailing" id="NE3-DH-A0V"/>
+                            <constraint firstItem="nLV-Pg-upJ" firstAttribute="top" secondItem="CNB-QK-LmF" secondAttribute="bottom" id="VTy-Xs-Co0"/>
+                            <constraint firstItem="mqF-e9-QZh" firstAttribute="top" secondItem="nLV-Pg-upJ" secondAttribute="bottom" id="bC5-4Q-yVz"/>
+                            <constraint firstAttribute="trailing" secondItem="CNB-QK-LmF" secondAttribute="trailing" id="rcJ-67-dXK"/>
+                            <constraint firstItem="CNB-QK-LmF" firstAttribute="top" secondItem="u3u-W5-NhJ" secondAttribute="top" id="zt3-iZ-f8v"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mpi-1W-AdE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="377" y="36"/>
+        </scene>
+    </scenes>
+</document>
