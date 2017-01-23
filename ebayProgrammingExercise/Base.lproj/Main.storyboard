@@ -89,56 +89,43 @@
                                     <outlet property="delegate" destination="bN8-P8-l6q" id="hgq-PE-dyu"/>
                                 </connections>
                             </mapView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zYd-hY-03X">
-                                <rect key="frame" x="30" y="74" width="80" height="21"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3oF-nk-pbo">
+                                <rect key="frame" x="20" y="100" width="335" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zYd-hY-03X">
+                                        <rect key="frame" x="1" y="1" width="333" height="126"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.86214783027927455" green="0.86214783027927455" blue="0.86214783027927455" alpha="0.88776958631690139" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="aRF-F4-yyi"/>
+                                    <constraint firstAttribute="bottom" secondItem="zYd-hY-03X" secondAttribute="bottom" constant="1" id="3Xb-3W-HV7"/>
+                                    <constraint firstItem="zYd-hY-03X" firstAttribute="top" secondItem="3oF-nk-pbo" secondAttribute="top" constant="1" id="6fe-4E-Yi8"/>
+                                    <constraint firstAttribute="height" constant="128" id="9zS-bt-mF3"/>
+                                    <constraint firstItem="zYd-hY-03X" firstAttribute="leading" secondItem="3oF-nk-pbo" secondAttribute="leading" constant="1" id="KhP-91-HPk"/>
+                                    <constraint firstAttribute="trailing" secondItem="zYd-hY-03X" secondAttribute="trailing" constant="1" id="xPf-ai-Yjd"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqL-sH-ANi">
-                                <rect key="frame" x="130" y="74" width="80" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="Yif-gb-Dt5"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eG6-fs-AOd">
-                                <rect key="frame" x="30" y="105" width="80" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="NR1-4f-2e6"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="eG6-fs-AOd" firstAttribute="leading" secondItem="zYd-hY-03X" secondAttribute="leading" id="1KZ-uU-2gh"/>
-                            <constraint firstItem="eqL-sH-ANi" firstAttribute="leading" secondItem="zYd-hY-03X" secondAttribute="trailing" constant="20" id="5bb-Zq-5Ir"/>
                             <constraint firstItem="CNB-QK-LmF" firstAttribute="leading" secondItem="u3u-W5-NhJ" secondAttribute="leading" id="84K-tO-7iX"/>
-                            <constraint firstItem="zYd-hY-03X" firstAttribute="top" secondItem="CNB-QK-LmF" secondAttribute="bottom" constant="30" id="8dc-3j-HoS"/>
+                            <constraint firstItem="3oF-nk-pbo" firstAttribute="top" secondItem="7zS-pT-Ygs" secondAttribute="bottom" constant="36" id="Eoo-No-Fmn"/>
                             <constraint firstItem="nLV-Pg-upJ" firstAttribute="leading" secondItem="u3u-W5-NhJ" secondAttribute="leading" id="EvM-ON-Ezw"/>
                             <constraint firstAttribute="trailing" secondItem="nLV-Pg-upJ" secondAttribute="trailing" id="NE3-DH-A0V"/>
-                            <constraint firstItem="zYd-hY-03X" firstAttribute="leading" secondItem="u3u-W5-NhJ" secondAttribute="leading" constant="30" id="R5H-2E-MUP"/>
-                            <constraint firstItem="eG6-fs-AOd" firstAttribute="top" secondItem="zYd-hY-03X" secondAttribute="bottom" constant="10" id="TvX-Mc-ir2"/>
                             <constraint firstItem="nLV-Pg-upJ" firstAttribute="top" secondItem="CNB-QK-LmF" secondAttribute="bottom" id="VTy-Xs-Co0"/>
                             <constraint firstItem="CNB-QK-LmF" firstAttribute="top" secondItem="u3u-W5-NhJ" secondAttribute="top" id="Xon-2S-xRo"/>
                             <constraint firstItem="mqF-e9-QZh" firstAttribute="top" secondItem="nLV-Pg-upJ" secondAttribute="bottom" id="bC5-4Q-yVz"/>
-                            <constraint firstItem="eqL-sH-ANi" firstAttribute="top" secondItem="CNB-QK-LmF" secondAttribute="bottom" constant="30" id="g29-X6-dBh"/>
+                            <constraint firstAttribute="trailing" secondItem="3oF-nk-pbo" secondAttribute="trailing" constant="20" id="eN6-Kp-DAH"/>
+                            <constraint firstItem="3oF-nk-pbo" firstAttribute="leading" secondItem="u3u-W5-NhJ" secondAttribute="leading" constant="20" id="fsg-Un-gog"/>
                             <constraint firstAttribute="trailing" secondItem="CNB-QK-LmF" secondAttribute="trailing" id="rcJ-67-dXK"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="capitalLabelOutlet" destination="eqL-sH-ANi" id="2vK-P2-tKg"/>
                         <outlet property="mapViewOutlet" destination="nLV-Pg-upJ" id="0lt-04-OUa"/>
                         <outlet property="nameLabelOutlet" destination="zYd-hY-03X" id="OZN-uc-UEC"/>
-                        <outlet property="populationLabelOutlet" destination="eG6-fs-AOd" id="o30-Or-aHN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mpi-1W-AdE" userLabel="First Responder" sceneMemberID="firstResponder"/>
