@@ -52,7 +52,7 @@
 		7D4FD85A1E34494600CF995E /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Country.swift; path = CustomClasses/Country.swift; sourceTree = "<group>"; };
 		7D4FD85C1E34744A00CF995E /* CountryDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CountryDetailView.swift; path = ViewControllers/CountryDetailView.swift; sourceTree = "<group>"; };
 		7D4FD85F1E347AC400CF995E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		7D4FD8651E35A70F00CF995E /* CountriesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountriesTableViewController.swift; sourceTree = "<group>"; };
+		7D4FD8651E35A70F00CF995E /* CountriesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CountriesTableViewController.swift; path = ViewControllers/CountriesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
