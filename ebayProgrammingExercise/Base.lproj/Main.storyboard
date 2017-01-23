@@ -56,7 +56,7 @@
                         <barButtonItem key="backBarButtonItem" title="back" id="x9P-nb-qGK"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="theTableView" destination="ECD-Iq-2Tl" id="D1b-xa-5cI"/>
+                        <outlet property="tableViewOutlet" destination="ECD-Iq-2Tl" id="Sq8-yC-sz5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NEe-Cu-TXo" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -66,68 +66,7 @@
         <!--Country Detail View Controller-->
         <scene sceneID="c5Q-IJ-oOd">
             <objects>
-                <viewController id="bN8-P8-l6q" customClass="CountryDetailViewController" customModule="ebayProgrammingExercise" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="7zS-pT-Ygs"/>
-                        <viewControllerLayoutGuide type="bottom" id="mqF-e9-QZh"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="u3u-W5-NhJ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CNB-QK-LmF">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                <items>
-                                    <navigationItem id="9YP-Tt-ta5">
-                                        <barButtonItem key="backBarButtonItem" title="back" id="13D-g2-VMI"/>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="nLV-Pg-upJ">
-                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
-                                <connections>
-                                    <outlet property="delegate" destination="bN8-P8-l6q" id="hgq-PE-dyu"/>
-                                </connections>
-                            </mapView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3oF-nk-pbo">
-                                <rect key="frame" x="20" y="100" width="335" height="128"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zYd-hY-03X">
-                                        <rect key="frame" x="1" y="1" width="333" height="126"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="0.86214783027927455" green="0.86214783027927455" blue="0.86214783027927455" alpha="0.88776958631690139" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="zYd-hY-03X" secondAttribute="bottom" constant="1" id="3Xb-3W-HV7"/>
-                                    <constraint firstItem="zYd-hY-03X" firstAttribute="top" secondItem="3oF-nk-pbo" secondAttribute="top" constant="1" id="6fe-4E-Yi8"/>
-                                    <constraint firstAttribute="height" constant="128" id="9zS-bt-mF3"/>
-                                    <constraint firstItem="zYd-hY-03X" firstAttribute="leading" secondItem="3oF-nk-pbo" secondAttribute="leading" constant="1" id="KhP-91-HPk"/>
-                                    <constraint firstAttribute="trailing" secondItem="zYd-hY-03X" secondAttribute="trailing" constant="1" id="xPf-ai-Yjd"/>
-                                </constraints>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="CNB-QK-LmF" firstAttribute="leading" secondItem="u3u-W5-NhJ" secondAttribute="leading" id="84K-tO-7iX"/>
-                            <constraint firstItem="3oF-nk-pbo" firstAttribute="top" secondItem="7zS-pT-Ygs" secondAttribute="bottom" constant="36" id="Eoo-No-Fmn"/>
-                            <constraint firstItem="nLV-Pg-upJ" firstAttribute="leading" secondItem="u3u-W5-NhJ" secondAttribute="leading" id="EvM-ON-Ezw"/>
-                            <constraint firstAttribute="trailing" secondItem="nLV-Pg-upJ" secondAttribute="trailing" id="NE3-DH-A0V"/>
-                            <constraint firstItem="nLV-Pg-upJ" firstAttribute="top" secondItem="CNB-QK-LmF" secondAttribute="bottom" id="VTy-Xs-Co0"/>
-                            <constraint firstItem="CNB-QK-LmF" firstAttribute="top" secondItem="u3u-W5-NhJ" secondAttribute="top" id="Xon-2S-xRo"/>
-                            <constraint firstItem="mqF-e9-QZh" firstAttribute="top" secondItem="nLV-Pg-upJ" secondAttribute="bottom" id="bC5-4Q-yVz"/>
-                            <constraint firstAttribute="trailing" secondItem="3oF-nk-pbo" secondAttribute="trailing" constant="20" id="eN6-Kp-DAH"/>
-                            <constraint firstItem="3oF-nk-pbo" firstAttribute="leading" secondItem="u3u-W5-NhJ" secondAttribute="leading" constant="20" id="fsg-Un-gog"/>
-                            <constraint firstAttribute="trailing" secondItem="CNB-QK-LmF" secondAttribute="trailing" id="rcJ-67-dXK"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="mapViewOutlet" destination="nLV-Pg-upJ" id="0lt-04-OUa"/>
-                        <outlet property="nameLabelOutlet" destination="zYd-hY-03X" id="OZN-uc-UEC"/>
-                    </connections>
-                </viewController>
+                <viewController id="bN8-P8-l6q" customClass="CountryDetailViewController" customModule="ebayProgrammingExercise" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mpi-1W-AdE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="376.80000000000001" y="35.532233883058474"/>

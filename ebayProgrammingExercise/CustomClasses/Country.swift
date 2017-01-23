@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Country {
+class Country {                 //custom class used to store pertinent information about a country
     var name: String
     var capital: String
     var population: Int
